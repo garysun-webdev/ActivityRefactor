@@ -1,5 +1,5 @@
 const app = require('./server/server');
 
-app.listen(4000, () => {
-  console.log('Listening');
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("Server Has Started!");
 });
